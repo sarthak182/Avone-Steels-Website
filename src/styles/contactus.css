@@ -1,0 +1,14 @@
+.contactus-cont{
+    display: flex;
+    flex-direction: column;
+}
+
+.send-enquiry-btn{
+    background-color: #003366;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 5px;
+    font-weight: bold;
+    width: 20%;
+}

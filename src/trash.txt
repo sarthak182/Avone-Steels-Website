@@ -1,0 +1,184 @@
+# Re-run the HTML file generation for Avone Steels India website
+
+html_content = """
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Avone Steels India | Precision Bright Bars Manufacturer & Exporter</title>
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #f8f8f8;
+            color: #333333;
+            margin: 0;
+            padding: 0;
+        }
+        header {
+            background-color: #003366;
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+        header h1 {
+            margin: 0;
+            font-size: 36px;
+        }
+        header p {
+            margin: 10px 0 0;
+            font-size: 18px;
+        }
+        .cta-buttons a {
+            display: inline-block;
+            margin: 15px 10px;
+            padding: 12px 24px;
+            text-decoration: none;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+        .primary-btn {
+            background-color: white;
+            color: #003366;
+        }
+        .secondary-btn {
+            border: 2px solid white;
+            color: white;
+        }
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: auto;
+        }
+        .about, .exports, .contact {
+            background-color: white;
+            margin-top: 20px;
+            border-radius: 8px;
+            padding: 40px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        h2 {
+            color: #003366;
+            border-left: 5px solid #c0c0c0;
+            padding-left: 10px;
+        }
+        .product-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+            gap: 20px;
+        }
+        .product-card {
+            background-color: #ffffff;
+            border-radius: 8px;
+            padding: 20px;
+            box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+            transition: transform 0.2s ease;
+        }
+        .product-card:hover {
+            transform: translateY(-5px);
+        }
+        footer {
+            background-color: #003366;
+            color: white;
+            text-align: center;
+            padding: 20px 10px;
+            font-size: 14px;
+        }
+        .contact-form input, .contact-form textarea {
+            width: 100%;
+            margin-bottom: 10px;
+            padding: 10px;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        .contact-form button {
+            background-color: #003366;
+            color: white;
+            border: none;
+            padding: 12px 24px;
+            border-radius: 5px;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body>
+
+<header>
+    <h1>Avone Steels India</h1>
+    <p>Precision Bright Bars for the World</p>
+    <div class="cta-buttons">
+        <a href="#products" class="primary-btn">View Product Range</a>
+        <a href="#contact" class="secondary-btn">Request a Quote</a>
+    </div>
+</header>
+
+<section class="about">
+    <h2>About Us</h2>
+    <p>Avone Steels India is a family-run manufacturer with over three decades of expertise in bright bar and forging technology.
+    We combine legacy craftsmanship with modern machinery to supply precision steel bars trusted by machinists, stockists, and OEMs worldwide.</p>
+    <ul>
+        <li>🧱 Direct Manufacturer – No traders in between</li>
+        <li>🧪 Lab-Tested Material (ISO-Certified Labs)</li>
+        <li>🚢 CIF & FOB Export Support</li>
+        <li>⏱ On-Time Delivery & Custom Sizes</li>
+    </ul>
+</section>
+
+<section id="products">
+    <h2>Our Products</h2>
+    <div class="product-grid">
+        <div class="product-card">
+            <h3>EN8D Bright Bars</h3>
+            <p>Medium carbon, high tensile strength, machining grade. Sizes: 12mm – 80mm</p>
+        </div>
+        <div class="product-card">
+            <h3>EN19 Bright Bars</h3>
+            <p>Alloy steel for automotive and aerospace applications.</p>
+        </div>
+        <div class="product-card">
+            <h3>SS 304 / 316 Bright Bars</h3>
+            <p>Corrosion-resistant, mirror finish bright bars for global industries.</p>
+        </div>
+        <div class="product-card">
+            <h3>Hex & Square Bars</h3>
+            <p>For fasteners, precision components, and fabrication work.</p>
+        </div>
+    </div>
+</section>
+
+<section class="exports">
+    <h2>Global Exports</h2>
+    <p>Avone Steels India supplies traders, stockists, and component manufacturers globally.
+    We handle documentation, CIF logistics, and port delivery seamlessly. Countries served include the UK, UAE, Australia, and Europe.</p>
+    <p><strong>Certifications:</strong> IEC | DGFT | MSME | GST Registered | ISO Testing Partner</p>
+</section>
+
+<section id="contact" class="contact">
+    <h2>Contact Us</h2>
+    <div class="contact-form">
+        <form>
+            <input type="text" placeholder="Your Name" required>
+            <input type="email" placeholder="Your Email" required>
+            <input type="text" placeholder="Company Name">
+            <textarea rows="4" placeholder="Your Requirements (Grade / Quantity)"></textarea>
+            <button type="submit">Send Enquiry</button>
+        </form>
+    </div>
+    <p><strong>Address:</strong> Plot No XXX, Sector XX, Faridabad – 121XXX, Haryana, India</p>
+    <p><strong>Email:</strong> exports@avonesteels.com | <strong>Phone:</strong> +91-XXXXXXXXXX</p>
+</section>
+
+<footer>
+    © 2025 Avone Steels India | Made in India 🇮🇳 | Designed for Global Export
+</footer>
+
+</body>
+</html>
+"""
+
+# Save HTML to file
+file_path = "/mnt/data/Avone_Steels_India_Export_Website.html"
+with open(file_path, "w") as f:
+    f.write(html_content)
+
+file_path
