@@ -5,10 +5,10 @@ function HeaderComponent(){
         <p className="avone-header">Avone Steels India</p>
         <p className="avone-subtext">Precision Bright Bars for the World</p>
     </div>
-    <div className="header-buttons">
+    {/* <div className="header-buttons">
     <button className="product-button">View Product Range</button>
     <button className="quote-button">Request A Quote</button>
-    </div>
+    </div> */}
     </div>)
 }
 export default HeaderComponent
