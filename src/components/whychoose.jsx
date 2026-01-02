@@ -1,4 +1,5 @@
 import whychooseusimage from "../images/whychooseus.jpg";
+import mtccertificate from "../images/mtc_page-0001.jpg";
 function WhyChoose(){
     return(<>
     <h2>
@@ -25,9 +26,12 @@ Every bundle is marked with:
     <li>Length</li>
     <li>Remarks</li>
 </ul>
+<img src={whychooseusimage} alt="" style={{ height: "200px" }}/>
+<br />
 We provide Mill Test Certificates (MTC) for every order, ensuring full traceability. Heat numbers guarantee buyers complete transparency and confidence in our product.
+    <br />
+    <img src={mtccertificate} alt="" style={{ height: "200px" }}/>
     </p>
-    <img src={whychooseusimage} alt="" style={{ height: "200px" }}/>
     <p>
         Third-Party ISO-Accredited Lab Test Reports
 
