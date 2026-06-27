@@ -1,74 +1,86 @@
+import Icon from "./icons";
+import { ZoomImage } from "./lightbox";
 import whychooseusimage from "../images/whychooseus.jpg";
 import mtccertificate from "../images/mtc_page-0001.jpg";
-function WhyChoose(){
-    return(<>
-    <h2>
-        Why Choose Us?
-    </h2>
-    <p>
-        At Avone Steels (Parent Company, Est. 2004) and Aditya Steels (Manufacturing Unit, Est. 2014), our commitment is simple — deliver consistent quality, reliable service, and long-term value.
-With nearly three decades of family experience in steel manufacturing and trading, we understand exactly what global buyers expect: dependable quality, transparent documentation, competitive pricing, and fast communication.
-Here is why leading traders, fabricators, and machining companies across industries trust us:
-<br />
-<br />
-30+ Years of Family Legacy & Market Knowledge
 
-Our family has been in the steel business for over three decades, giving us deep insight into raw material sourcing, market pricing, and customer requirements. This experience allows us to offer quality-stable, price-stable products even in fluctuating markets.
-    </p>
-    <p>
-        Strict Quality Control + MTC + Heat Numbers
+const reasons = [
+  {
+    icon: "award",
+    title: "30+ Years of Family Legacy",
+    text: "Three decades in steel trading and manufacturing give us deep insight into sourcing, pricing and customer needs — so we stay quality-stable and price-stable even in volatile markets.",
+    list: [],
+  },
+  {
+    icon: "shield",
+    title: "Strict QC, MTC & Heat Numbers",
+    text: "Every bundle is clearly marked, and every order ships with a Mill Test Certificate for full traceability. Each bundle carries:",
+    list: ["Party name", "Grade", "Size", "Length", "Remarks"],
+  },
+  {
+    icon: "beaker",
+    title: "Third-Party ISO-Lab Testing",
+    text: "Although we don't currently hold ISO certification ourselves, all material can be independently verified through ISO-accredited third-party labs. We support:",
+    list: ["CIF", "FOB", "EXW"],
+  },
+  {
+    icon: "chat",
+    title: "Fast, Professional Communication",
+    text: "Professional email, quick replies, clear quotations and structured PDFs. With us, buyers get:",
+    list: ["Immediate response", "Clear pricing", "Packing & process photos", "Certificates", "Heat-number traceability"],
+  },
+  {
+    icon: "box",
+    title: "Reliable, Export-Ready Packing",
+    text: "Bundles are shot-blasted, numbered, labelled and strapped with high-strength steel straps, packed export-safe — so buyers receive clean, dry, rust-free bars.",
+    list: [],
+  },
+];
 
-Every bundle is marked with:
-<ul>
-    <li>Party Name</li>
-    <li>Grade</li>
-    <li>Size</li>
-    <li>Length</li>
-    <li>Remarks</li>
-</ul>
-<img src={whychooseusimage} alt="" style={{ height: "200px" }}/>
-<br />
-We provide Mill Test Certificates (MTC) for every order, ensuring full traceability. Heat numbers guarantee buyers complete transparency and confidence in our product.
-    <br />
-    <img src={mtccertificate} alt="" style={{ height: "200px" }}/>
-    </p>
-    <p>
-        Third-Party ISO-Accredited Lab Test Reports
+function WhyChoose() {
+  return (
+    <section className="section section--dark" id="why">
+      <div className="container">
+        <div className="section-head">
+          <span className="eyebrow">Why Choose Us</span>
+          <h2 className="section-title">Quality you can document, service you can rely on</h2>
+          <p className="section-sub">
+            Across Avone Steels (parent company, est. 2004) and Aditya Steels (manufacturing
+            unit, est. 2014), our commitment is simple — consistent quality, reliable service
+            and long-term value. Here is why traders, fabricators and machining companies
+            trust us.
+          </p>
+        </div>
 
-Even though we currently do not hold an ISO certification, all our materials can be tested through ISO-accredited third-party labs.
-This ensures the buyer receives independent, unbiased verification of chemical and mechanical properties.
-We offer:
-<ul>
-    <li>CIF</li>
-    <li>FOB</li>
-    <li>EXW</li>
-</ul>
-    </p>
-    <p>
-        Fast Communication & Professional Documentation
+        <div className="why__grid">
+          {reasons.map((r) => (
+            <article className="why-card" key={r.title}>
+              <div className="icon-badge"><Icon name={r.icon} /></div>
+              <h3>{r.title}</h3>
+              <p>{r.text}</p>
+              {r.list.length > 0 && (
+                <ul className="tick-list">
+                  {r.list.map((item) => (
+                    <li key={item}>{item}</li>
+                  ))}
+                </ul>
+              )}
+            </article>
+          ))}
+        </div>
 
-We maintain professional emails, quick replies, clear quotations, and structured PDFs.
-With us, buyers get:
-<ul>
-    <li>Immediate Response</li>
-    <li>Clear Pricing</li>
-    <li>Packing photos</li>
-    <li>Process photos</li>
-    <li>Certificates</li>
-    <li>Heat Number Traceability</li>
-</ul>
-    </p>
-    <p>
-        Reliable Packing & Export-Ready Bundles
-
-Our bundles are:<ul>
-    <li>Shot blasted for a clean finish</li>
-    <li>Numbered and labeled</li>
-    <li>Strapped with high-strength steel straps</li>
-    <li>Packed export-safe</li>
-</ul>
-Buyers receive clean, dry, rust-free bars.
-    </p>
-    </>)
+        <div className="why__gallery">
+          <figure>
+            <ZoomImage src={whychooseusimage} alt="Marked and labelled export steel bundle" />
+            <figcaption>Every bundle marked with party, grade, size and length.</figcaption>
+          </figure>
+          <figure>
+            <ZoomImage src={mtccertificate} alt="Sample Mill Test Certificate" />
+            <figcaption>A Mill Test Certificate is issued with every order.</figcaption>
+          </figure>
+        </div>
+      </div>
+    </section>
+  );
 }
+
 export default WhyChoose;
