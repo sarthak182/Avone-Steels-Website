@@ -1,17 +1,17 @@
 function Trashy() {
   return (
     <div>
-        <section className="about">
-    <h2>About Us</h2>
-    <p>Avone Steels India is a family-run manufacturer with over three decades of expertise in bright bar and forging technology.
-    We combine legacy craftsmanship with modern machinery to supply precision steel bars trusted by machinists, stockists, and OEMs worldwide.</p>
-    <ul>
-        <li>🧱 Direct Manufacturer – No traders in between</li>
-        <li>🧪 Lab-Tested Material (ISO-Certified Labs)</li>
-        <li>🚢 CIF & FOB Export Support</li>
-        <li>⏱ On-Time Delivery & Custom Sizes</li>
-    </ul>
-</section>
+      <section className="about">
+        <h2>About Us</h2>
+        <p>Avone Steels India is a family-run manufacturer with over three decades of expertise in bright bar and forging technology.
+          We combine legacy craftsmanship with modern machinery to supply precision steel bars trusted by machinists, stockists, and OEMs worldwide.</p>
+        <ul>
+          <li>🧱 Direct Manufacturer – No traders in between</li>
+          <li>🧪 Lab-Tested Material (ISO-Certified Labs)</li>
+          <li>🚢 CIF & FOB Export Support</li>
+          <li>⏱ On-Time Delivery & Custom Sizes</li>
+        </ul>
+      </section>
       <section id="products">
         <h2>Our Products</h2>
         <div className="product-grid">
@@ -37,9 +37,9 @@ function Trashy() {
       <section className="exports">
         <h2>Global Exports</h2>
         <p>Avone Steels India supplies traders, stockists, and component manufacturers globally.
-        We handle documentation, CIF logistics, and port delivery seamlessly. Countries served include the UK, UAE, Australia, and Europe.</p>
+          We handle documentation, CIF logistics, and port delivery seamlessly. Countries served include the UK, UAE, Australia, and Europe.</p>
         <p><strong>Certifications:</strong> IEC | DGFT | MSME | GST Registered | ISO Testing Partner</p>
-    </section>
+      </section>
 
       <section id="contact" className="contact">
         <h2>Contact Us</h2>
@@ -52,8 +52,8 @@ function Trashy() {
             <button type="submit">Send Enquiry</button>
           </form>
         </div>
-            <p><strong>Address:</strong> Plot No 19A, Sector XX, Faridabad - 121004, Haryana, India</p>
-    <p><strong>Email:</strong> contact@avonesteels.com | <strong>Phone:</strong> +91-8383904038</p>
+        <p><strong>Address:</strong> Plot No 19A, Sector XX, Faridabad - 121004, Haryana, India</p>
+        <p><strong>Email:</strong> contact@avonesteels.com | <strong>Phone:</strong> +91-9811159460</p>
       </section>
 
       <footer>© 2025 Avone Steels India | Made in India 🇮🇳 | Designed for Global Export</footer>

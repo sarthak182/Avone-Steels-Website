@@ -41,7 +41,7 @@ function Footer() {
             <h4>Contact</h4>
             <p>Plot No 19A, New Industrial Township, Faridabad&nbsp;-&nbsp;121004, Haryana, India</p>
             <a href="mailto:contact@avonesteels.com">contact@avonesteels.com</a>
-            <a href="tel:+918383904038">+91-8383904038</a>
+            <a href="tel:+919811159460">+91-9811159460</a>
           </div>
         </div>
 

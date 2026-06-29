@@ -37,8 +37,8 @@ function ContactUs() {
               <div className="icon-badge"><Icon name="phone" /></div>
               <div>
                 <div className="contact-item__label">Phone</div>
-                <a className="contact-item__value" href="tel:+918383904038">
-                  +91-8383904038
+                <a className="contact-item__value" href="tel:+919811159460">
+                  +91-9811159460
                 </a>
               </div>
             </div>
@@ -54,7 +54,7 @@ function ContactUs() {
               <a className="btn btn--primary" href="mailto:contact@avonesteels.com?subject=Enquiry%20-%20Bright%20Bars">
                 Email an Enquiry
               </a>
-              <a className="btn btn--ghost" href="tel:+918383904038">
+              <a className="btn btn--ghost" href="tel:+919811159460">
                 Call Us
               </a>
             </div>
